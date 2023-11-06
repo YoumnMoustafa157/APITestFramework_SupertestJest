@@ -15,9 +15,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run API tests
-        run: npm test  
-      - uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: jest-html-report
-          path: reports/
+        run: npm citest
+        env:
+          CI: true  
+

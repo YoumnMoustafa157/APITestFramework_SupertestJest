@@ -9,6 +9,11 @@ module.exports = {
       {
         publicPath: './reports'
       }
+    ],
+    [
+      "default",
+      "jest-github-actions-reporter"
     ]
+
   ]
 };
