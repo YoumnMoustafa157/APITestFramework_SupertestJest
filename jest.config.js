@@ -4,11 +4,9 @@ module.exports = {
   testEnvironment: 'node',
   collectCoverageFrom: ["./specs/*.spec.ts"],
   reporters: [
-    'default',
-    ['jest-html-reporters',
-      {
+		'default',
+		  (process.env.CI === 'true' ? [['jest-html-reporter', {
         publicPath: 'reports'
-      }
-    ]
-  ]
+		}]] : [])
+	]
 };
