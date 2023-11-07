@@ -4,11 +4,12 @@ module.exports = {
   testEnvironment: 'node',
   collectCoverageFrom: ["./specs/*.spec.ts"],
   reporters: [
-    'default',
-    ['jest-html-reporters',
-      {
-        publicPath: './reports'
-      }
-    ]
-  ]
+    "default",
+    ["jest-github-actions-reporter",
+  
+  {
+    outputPath: './reports'
+  }]
+  ],
+  testLocationInResults: true
 };
