@@ -4,8 +4,7 @@
   "description": "This is API test framework using supertest jest chai",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "citest": "CI=true jest --reporters=default --reporters=jest-github-actions-reporter"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",

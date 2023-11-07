@@ -19,7 +19,7 @@ jobs:
       - name: set Nx  
         uses: nrwl/nx-set-shas@v3 
       - name: Run API tests
-        run: nx test
+        run: npx jest --collectCoverage
         env:
           CI: true  
       - uses: actions/upload-artifact@v3 
