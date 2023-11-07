@@ -5,11 +5,8 @@ module.exports = {
   collectCoverageFrom: ["./specs/*.spec.ts"],
   reporters: [
     "default",
-    ["jest-github-actions-reporter",
-  
-  {
-    outputPath: './reports'
-  }]
+    ["jest-html-reporters",
+  {outputPath: './reports'}]
   ],
   testLocationInResults: true
 };
