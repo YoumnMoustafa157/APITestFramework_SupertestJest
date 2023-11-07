@@ -26,6 +26,6 @@ jobs:
         if: always()
         with:
           name: Jest Reporter
-          path: ~/reports/
+          path: ~/reports/jest_html_reporters.html
 
 
