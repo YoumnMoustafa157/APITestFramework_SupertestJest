@@ -22,4 +22,10 @@ jobs:
         run: nx test
         env:
           CI: true  
+      - uses: actions/upload-artifact@v3 
+        if: always()
+        with:
+          name: Jest Reporter
+          path: reports/
+
 
