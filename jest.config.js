@@ -6,8 +6,10 @@ module.exports = {
   reporters: [
     "default",
     ["jest-html-reporters",
-  {outputPath: './reports'}
+  {outputPath: './reports',
+  testResultsProcessor: "./node_modules/jest-html-reporter"}
 ]
   ],
-  testLocationInResults: true
+  testLocationInResults: true,
+  
 };
