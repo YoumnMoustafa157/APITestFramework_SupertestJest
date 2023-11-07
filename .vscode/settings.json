@@ -1,3 +1,4 @@
 {
-    "playwrightrunner.changeDirectoryToWorkspaceRoot": true
+    "playwrightrunner.changeDirectoryToWorkspaceRoot": true,
+    "liveServer.settings.port": 5501
 }
