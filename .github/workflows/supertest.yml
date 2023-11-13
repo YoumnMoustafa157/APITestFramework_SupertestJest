@@ -1,13 +1,10 @@
 name: API Tests
 on:
-  workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'     
-        required: true
-        default: 'warning'
-      tags:
-        description: 'Test scenario tags'  
+    workflow_dispatch:
+      inputs:
+        name:
+          description: "Who to greet"
+          default: "World"  
 jobs:
   test:
     runs-on: ubuntu-latest
